@@ -25,4 +25,4 @@ with tf.Session() as sess:
         sess.run(train_step,feed_dict={x:X[start:end],y:Y[start:end]})
         if i % 1000 == 0:
             training_loss = sess.run(cross_entropy,feed_dict{x:X,y:Y})
-            print("在迭代%d次后，训练损失为 %g" %(i,training_loss))
+            print("run time %d after,training loss is  %g" %(i,training_loss))
